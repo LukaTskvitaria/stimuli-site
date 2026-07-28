@@ -128,7 +128,7 @@
 </div>
 </section>
 
-<!-- Services Section (Bento Style) -->
+<!-- Services Section -->
 <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div class="flex flex-wrap justify-between items-end gap-4 mb-12">
 <div class="max-w-md">
@@ -139,78 +139,129 @@
 ყველა სერვისი <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
 </a>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter h-auto md:h-[600px]">
-<!-- Psychotherapy -->
-<a class="md:col-span-2 group relative overflow-hidden rounded-[32px] border border-outline-variant/60 hover:border-primary/50 soft-shadow bg-white p-10 flex flex-col justify-end transition-all hover:-translate-y-2" href="services.html#therapy">
-<div class="absolute top-0 right-0 w-48 h-48 opacity-10 group-hover:opacity-20 transition-opacity">
-<img class="w-full h-full object-contain" alt="" src="assets/img/deco-lines.png"/>
-</div>
-<div class="relative z-10">
-<div class="w-16 h-16 bg-primary-fixed rounded-2xl flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary text-3xl" aria-hidden="true">psychology</span>
-</div>
-<h3 class="font-display text-headline-md-mobile md:text-headline-md text-primary mb-4">ფსიქოთერაპია</h3>
-<p class="text-body-md text-on-surface-variant mb-6">ინდივიდუალური მუშაობა ღრმა შინაგან კონფლიქტებთან, ტრავმებთან და ემოციურ სირთულეებთან.</p>
-<span class="flex items-center gap-2 text-label-md text-primary group-hover:gap-4 transition-all">
-დეტალურად <span class="material-symbols-outlined" aria-hidden="true">east</span>
+<div class="grid md:grid-cols-[380px_1fr] gap-gutter items-start">
+<div class="space-y-2 bg-surface-container-low border border-outline-variant/60 rounded-[28px] p-4" id="svc-menu">
+<button class="svc-tab group w-full text-left flex items-center gap-4 px-5 py-4 rounded-2xl border border-transparent transition-all" data-idx="0" data-active="true">
+<span class="w-11 h-11 rounded-xl bg-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">psychology</span>
 </span>
+<span class="font-accent text-body-lg text-on-surface">ფსიქოთერაპია</span>
+<span class="material-symbols-outlined ml-auto text-primary opacity-0 svc-arrow transition-opacity" aria-hidden="true">east</span>
+</button>
+<button class="svc-tab group w-full text-left flex items-center gap-4 px-5 py-4 rounded-2xl border border-transparent transition-all" data-idx="1">
+<span class="w-11 h-11 rounded-xl bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-xl" aria-hidden="true">forum</span>
+</span>
+<span class="font-accent text-body-lg text-on-surface">ფსიქოკონსულტირება</span>
+<span class="material-symbols-outlined ml-auto text-primary opacity-0 svc-arrow transition-opacity" aria-hidden="true">east</span>
+</button>
+<button class="svc-tab group w-full text-left flex items-center gap-4 px-5 py-4 rounded-2xl border border-transparent transition-all" data-idx="2">
+<span class="w-11 h-11 rounded-xl bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-xl" aria-hidden="true">palette</span>
+</span>
+<span class="font-accent text-body-lg text-on-surface">არტ-თერაპია</span>
+<span class="material-symbols-outlined ml-auto text-primary opacity-0 svc-arrow transition-opacity" aria-hidden="true">east</span>
+</button>
+<button class="svc-tab group w-full text-left flex items-center gap-4 px-5 py-4 rounded-2xl border border-transparent transition-all" data-idx="3">
+<span class="w-11 h-11 rounded-xl bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-tertiary text-xl" aria-hidden="true">groups</span>
+</span>
+<span class="font-accent text-body-lg text-on-surface">ჯგუფური პროგრამები</span>
+<span class="material-symbols-outlined ml-auto text-primary opacity-0 svc-arrow transition-opacity" aria-hidden="true">east</span>
+</button>
+<button class="svc-tab group w-full text-left flex items-center gap-4 px-5 py-4 rounded-2xl border border-transparent transition-all" data-idx="4">
+<span class="w-11 h-11 rounded-xl bg-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">self_improvement</span>
+</span>
+<span class="font-accent text-body-lg text-on-surface">პიროვნული განვითარება</span>
+<span class="material-symbols-outlined ml-auto text-primary opacity-0 svc-arrow transition-opacity" aria-hidden="true">east</span>
+</button>
+<button class="svc-tab group w-full text-left flex items-center gap-4 px-5 py-4 rounded-2xl border border-transparent transition-all" data-idx="5">
+<span class="w-11 h-11 rounded-xl bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-tertiary text-xl" aria-hidden="true">school</span>
+</span>
+<span class="font-accent text-body-lg text-on-surface">საგანმანათლებლო პროგრამები</span>
+<span class="material-symbols-outlined ml-auto text-primary opacity-0 svc-arrow transition-opacity" aria-hidden="true">east</span>
+</button>
 </div>
-</a>
-<!-- Art Therapy -->
-<a class="md:col-span-1 group relative overflow-hidden rounded-[32px] border border-outline-variant/60 hover:border-secondary soft-shadow bg-secondary-fixed/40 p-10 flex flex-col justify-between transition-all hover:-translate-y-2" href="services.html#art">
-<div class="w-12 h-12 bg-secondary-fixed rounded-xl flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-secondary text-2xl" aria-hidden="true">palette</span>
+<div class="bg-white border border-outline-variant/60 rounded-[32px] soft-shadow p-8" id="svc-stage">
+<div class="svc-panel" data-idx="0">
+<div class="rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
+<img class="w-full h-full object-cover" alt="ფსიქოთერაპია" src="assets/img/therapy-room.jpg" loading="lazy"/>
 </div>
-<div>
-<h3 class="font-accent text-title-lg text-on-surface mb-2">არტ-თერაპია</h3>
-<p class="text-label-md text-on-surface-variant">შემოქმედებითი გზა ემოციების გამოხატვისა და გაცნობიერებისთვის.</p>
-<span class="mt-4 flex items-center gap-2 text-label-md font-semibold text-secondary group-hover:gap-4 transition-all">
+<h3 class="font-display text-headline-md-mobile text-primary mb-3">ფსიქოთერაპია</h3>
+<p class="text-body-md text-on-surface-variant mb-6">ინდივიდუალური მუშაობა შფოთვასთან, ტრავმებთან და ემოციურ სირთულეებთან.</p>
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary px-7 py-3 rounded-full text-label-md hover:bg-primary-container transition-all active:scale-95" href="services.html#therapy">
 დეტალურად <span class="material-symbols-outlined text-lg" aria-hidden="true">east</span>
-</span>
-</div>
 </a>
-<!-- Group Programs -->
-<a class="md:col-span-1 group relative overflow-hidden rounded-[32px] border border-outline-variant/60 hover:border-tertiary/60 soft-shadow bg-tertiary-fixed/30 p-10 flex flex-col justify-between transition-all hover:-translate-y-2" href="services.html#group">
-<div class="w-12 h-12 bg-tertiary-fixed rounded-xl flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-tertiary text-2xl" aria-hidden="true">groups</span>
 </div>
-<div>
-<h3 class="font-accent text-title-lg text-on-surface mb-2">ჯგუფური პროგრამები</h3>
-<p class="text-label-md text-on-surface-variant">მხარდაჭერა და გამოცდილების გაზიარება უსაფრთხო ჯგუფურ გარემოში.</p>
-<span class="mt-4 flex items-center gap-2 text-label-md font-semibold text-tertiary group-hover:gap-4 transition-all">
+<div class="svc-panel hidden" data-idx="1">
+<div class="rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
+<img class="w-full h-full object-cover" alt="ფსიქოკონსულტირება" src="assets/img/morning-light.jpg" loading="lazy"/>
+</div>
+<h3 class="font-display text-headline-md-mobile text-primary mb-3">ფსიქოკონსულტირება</h3>
+<p class="text-body-md text-on-surface-variant mb-6">კონკრეტული საკითხის გარკვევა, გადაწყვეტილების მიღება და აზრების დალაგება.</p>
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary px-7 py-3 rounded-full text-label-md hover:bg-primary-container transition-all active:scale-95" href="services.html#counseling">
 დეტალურად <span class="material-symbols-outlined text-lg" aria-hidden="true">east</span>
-</span>
-</div>
 </a>
-<!-- Educational Programs -->
-<a class="md:col-span-2 group relative overflow-hidden rounded-[32px] border border-outline-variant/60 hover:border-primary/50 soft-shadow bg-white p-10 flex flex-col justify-center transition-all hover:-translate-y-2" href="programs.html">
-<div class="flex items-center gap-8">
-<div class="w-20 h-20 bg-primary-container/10 rounded-full flex-shrink-0 flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-4xl" aria-hidden="true">school</span>
 </div>
-<div>
-<h3 class="font-display text-headline-md-mobile md:text-headline-md text-primary mb-2">საგანმანათლებლო პროგრამები</h3>
-<p class="text-body-md text-on-surface-variant mb-3">კურსები და ტრენინგები პროფესიონალებისა და დაინტერესებული პირებისთვის.</p>
-<span class="flex items-center gap-2 text-label-md font-semibold text-primary group-hover:gap-4 transition-all">
+<div class="svc-panel hidden" data-idx="2">
+<div class="rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
+<img class="w-full h-full object-cover" alt="არტ-თერაპია" src="assets/img/therapy-materials.jpg" loading="lazy"/>
+</div>
+<h3 class="font-display text-headline-md-mobile text-primary mb-3">არტ-თერაპია</h3>
+<p class="text-body-md text-on-surface-variant mb-6">შემოქმედებითი გზა ემოციების გამოხატვისა და თვითშემეცნებისთვის.</p>
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary px-7 py-3 rounded-full text-label-md hover:bg-primary-container transition-all active:scale-95" href="services.html#art">
 დეტალურად <span class="material-symbols-outlined text-lg" aria-hidden="true">east</span>
-</span>
-</div>
-</div>
 </a>
-<!-- Personal Growth -->
-<a class="md:col-span-2 group relative overflow-hidden rounded-[32px] soft-shadow bg-primary text-on-primary p-10 flex flex-col justify-center transition-all hover:-translate-y-2" href="services.html#growth">
-<div class="flex items-center justify-between">
-<div class="max-w-xs">
-<h3 class="font-display text-headline-md-mobile md:text-headline-md mb-2">პიროვნული განვითარება</h3>
-<p class="opacity-80 mb-3">თქვენი პოტენციალის აღმოჩენა და თვითრეალიზაცია.</p>
-<span class="flex items-center gap-2 text-label-md font-semibold text-on-primary group-hover:gap-4 transition-all">
+</div>
+<div class="svc-panel hidden" data-idx="3">
+<div class="rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
+<img class="w-full h-full object-cover" alt="ჯგუფური პროგრამები" src="assets/img/group-room.jpg" loading="lazy"/>
+</div>
+<h3 class="font-display text-headline-md-mobile text-primary mb-3">ჯგუფური პროგრამები</h3>
+<p class="text-body-md text-on-surface-variant mb-6">გამოცდილების გაზიარება და ზრდა უსაფრთხო ჯგუფურ გარემოში.</p>
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary px-7 py-3 rounded-full text-label-md hover:bg-primary-container transition-all active:scale-95" href="services.html#group">
 დეტალურად <span class="material-symbols-outlined text-lg" aria-hidden="true">east</span>
-</span>
-</div>
-<span class="material-symbols-outlined text-6xl opacity-20" aria-hidden="true">self_improvement</span>
-</div>
 </a>
 </div>
+<div class="svc-panel hidden" data-idx="4">
+<div class="rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
+<img class="w-full h-full object-cover" alt="პიროვნული განვითარება" src="assets/img/hero-portrait.jpg" loading="lazy"/>
+</div>
+<h3 class="font-display text-headline-md-mobile text-primary mb-3">პიროვნული განვითარება</h3>
+<p class="text-body-md text-on-surface-variant mb-6">თვითშემეცნება, საზღვრები, რესურსები და ახალი შესაძლებლობები.</p>
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary px-7 py-3 rounded-full text-label-md hover:bg-primary-container transition-all active:scale-95" href="services.html#growth">
+დეტალურად <span class="material-symbols-outlined text-lg" aria-hidden="true">east</span>
+</a>
+</div>
+<div class="svc-panel hidden" data-idx="5">
+<div class="rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
+<img class="w-full h-full object-cover" alt="საგანმანათლებლო პროგრამები" src="assets/img/therapy-room.jpg" loading="lazy"/>
+</div>
+<h3 class="font-display text-headline-md-mobile text-primary mb-3">საგანმანათლებლო პროგრამები</h3>
+<p class="text-body-md text-on-surface-variant mb-6">სტაჟირება, არტ-თერაპიის კურსი, ნეიროგრაფიკა და სუპერვიზია.</p>
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary px-7 py-3 rounded-full text-label-md hover:bg-primary-container transition-all active:scale-95" href="programs.html">
+დეტალურად <span class="material-symbols-outlined text-lg" aria-hidden="true">east</span>
+</a>
+</div>
+</div>
+</div>
+<style>
+.svc-tab[data-active="true"] { background: #fff; border-color: rgba(195,200,189,.6); box-shadow: 0 10px 30px rgba(74,103,65,.05); }
+.svc-tab[data-active="true"] .svc-arrow { opacity: 1; }
+.svc-tab:hover { background: rgba(255,255,255,.7); }
+.svc-panel { animation: rise-in .45s cubic-bezier(.22,1,.36,1); }
+</style>
+<script>
+document.getElementById('svc-menu').addEventListener('click', (e) => {
+  const btn = e.target.closest('.svc-tab');
+  if (!btn) return;
+  document.querySelectorAll('.svc-tab').forEach(b => b.removeAttribute('data-active'));
+  btn.setAttribute('data-active', 'true');
+  document.querySelectorAll('.svc-panel').forEach(p => p.classList.toggle('hidden', p.dataset.idx !== btn.dataset.idx));
+});
+</script>
 </section>
 
 <!-- Why Stimuli Section -->
