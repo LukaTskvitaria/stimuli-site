@@ -49,7 +49,7 @@ tailwind.config = {
         "unit": "8px"
       },
       fontFamily: {
-        "display": ["Manrope", "Noto Sans Georgian", "sans-serif"],
+        "display": ["Manrope", "Noto Serif Georgian", "serif"],
         "body": ["Fira Sans", "Noto Sans Georgian", "sans-serif"]
       },
       fontSize: {
