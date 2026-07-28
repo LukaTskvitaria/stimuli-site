@@ -128,20 +128,22 @@
 </div>
 </section>
 
-<!-- Services Section -->
-<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="flex flex-wrap justify-between items-end gap-4 mb-12">
+<!-- Services Section (scroll-pinned showcase) -->
+<section class="relative" id="svc-pin">
+<div class="svc-sticky md:sticky md:top-20 md:overflow-hidden">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-12 md:py-8 w-full">
+<div class="svc-head flex flex-wrap justify-between items-end gap-4 mb-8">
 <div class="max-w-md">
-<h2 class="font-display text-headline-md-mobile md:text-headline-md text-primary mb-4">ჩვენი სერვისები</h2>
-<p class="text-body-md text-on-surface-variant">პროფესიული მხარდაჭერა თქვენი მენტალური ჯანმრთელობისა და ზრდისთვის.</p>
+<h2 class="font-display text-headline-md-mobile md:text-headline-md text-primary mb-3">ჩვენი სერვისები</h2>
+<p class="svc-head-sub text-body-md text-on-surface-variant">პროფესიული მხარდაჭერა თქვენი მენტალური ჯანმრთელობისა და ზრდისთვის.</p>
 </div>
-<a class="text-primary text-label-md flex items-center gap-2 hover:underline" href="services.html">
+<a class="svc-head-link text-primary text-label-md flex items-center gap-2 hover:underline" href="services.html">
 ყველა სერვისი <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
 </a>
 </div>
 <div class="grid md:grid-cols-[380px_1fr] gap-gutter items-start">
 <div class="space-y-2 bg-surface-container-low border border-outline-variant/60 rounded-[28px] p-4" id="svc-menu">
-<button class="svc-tab group w-full text-left flex items-center gap-4 px-5 py-4 rounded-2xl border border-transparent transition-all" data-idx="0" data-active="true">
+<button class="svc-tab group w-full text-left flex items-center gap-4 px-5 py-4 rounded-2xl border border-transparent transition-all" data-idx="0" data-active>
 <span class="w-11 h-11 rounded-xl bg-primary-fixed flex items-center justify-center flex-shrink-0">
 <span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">psychology</span>
 </span>
@@ -186,7 +188,7 @@
 </div>
 <div class="bg-white border border-outline-variant/60 rounded-[32px] soft-shadow p-8" id="svc-stage">
 <div class="svc-panel" data-idx="0">
-<div class="rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
+<div class="svc-img rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
 <img class="w-full h-full object-cover" alt="ფსიქოთერაპია" src="assets/img/therapy-room.jpg" loading="lazy"/>
 </div>
 <h3 class="font-display text-headline-md-mobile text-primary mb-3">ფსიქოთერაპია</h3>
@@ -196,7 +198,7 @@
 </a>
 </div>
 <div class="svc-panel hidden" data-idx="1">
-<div class="rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
+<div class="svc-img rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
 <img class="w-full h-full object-cover" alt="ფსიქოკონსულტირება" src="assets/img/morning-light.jpg" loading="lazy"/>
 </div>
 <h3 class="font-display text-headline-md-mobile text-primary mb-3">ფსიქოკონსულტირება</h3>
@@ -206,7 +208,7 @@
 </a>
 </div>
 <div class="svc-panel hidden" data-idx="2">
-<div class="rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
+<div class="svc-img rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
 <img class="w-full h-full object-cover" alt="არტ-თერაპია" src="assets/img/therapy-materials.jpg" loading="lazy"/>
 </div>
 <h3 class="font-display text-headline-md-mobile text-primary mb-3">არტ-თერაპია</h3>
@@ -216,7 +218,7 @@
 </a>
 </div>
 <div class="svc-panel hidden" data-idx="3">
-<div class="rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
+<div class="svc-img rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
 <img class="w-full h-full object-cover" alt="ჯგუფური პროგრამები" src="assets/img/group-room.jpg" loading="lazy"/>
 </div>
 <h3 class="font-display text-headline-md-mobile text-primary mb-3">ჯგუფური პროგრამები</h3>
@@ -226,7 +228,7 @@
 </a>
 </div>
 <div class="svc-panel hidden" data-idx="4">
-<div class="rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
+<div class="svc-img rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
 <img class="w-full h-full object-cover" alt="პიროვნული განვითარება" src="assets/img/hero-portrait.jpg" loading="lazy"/>
 </div>
 <h3 class="font-display text-headline-md-mobile text-primary mb-3">პიროვნული განვითარება</h3>
@@ -236,7 +238,7 @@
 </a>
 </div>
 <div class="svc-panel hidden" data-idx="5">
-<div class="rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
+<div class="svc-img rounded-[32px] overflow-hidden aspect-[16/10] mb-6 soft-shadow">
 <img class="w-full h-full object-cover" alt="საგანმანათლებლო პროგრამები" src="assets/img/therapy-room.jpg" loading="lazy"/>
 </div>
 <h3 class="font-display text-headline-md-mobile text-primary mb-3">საგანმანათლებლო პროგრამები</h3>
@@ -247,22 +249,83 @@
 </div>
 </div>
 </div>
+</div>
+</div>
+</section>
 <style>
-.svc-tab[data-active="true"] { background: #fff; border-color: rgba(195,200,189,.6); box-shadow: 0 10px 30px rgba(74,103,65,.05); }
-.svc-tab[data-active="true"] .svc-arrow { opacity: 1; }
+.svc-tab[data-active] { background: #fff; border-color: rgba(195,200,189,.6); box-shadow: 0 10px 30px rgba(74,103,65,.05); }
+.svc-tab[data-active] .svc-arrow { opacity: 1; }
 .svc-tab:hover { background: rgba(255,255,255,.7); }
 .svc-panel { animation: rise-in .45s cubic-bezier(.22,1,.36,1); }
+
+/* Pin-რეჟიმი მხოლოდ დესკტოპზე და მოძრაობის მოყვარულთათვის */
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  #svc-pin { height: 400vh; }
+  .svc-sticky { height: calc(100vh - 80px); display: flex; align-items: center; }
+}
+
+/* დაბალ ეკრანებზე შიგთავსი იკუმშება, რომ pin-კადრში ჩაეტიოს */
+@media (min-width: 768px) and (max-height: 1000px) {
+  .svc-head-sub, .svc-head-link { display: none; }
+  .svc-head { margin-bottom: 1rem; }
+  #svc-stage { padding: 1.25rem 1.5rem; }
+  #svc-stage .svc-img { aspect-ratio: 16/8; margin-bottom: 0.9rem; }
+  #svc-stage h3 { margin-bottom: 0.4rem; }
+  #svc-stage p { margin-bottom: 0.9rem; }
+  #svc-menu .svc-tab { padding-top: 0.65rem; padding-bottom: 0.65rem; }
+}
 </style>
 <script>
-document.getElementById('svc-menu').addEventListener('click', (e) => {
-  const btn = e.target.closest('.svc-tab');
-  if (!btn) return;
-  document.querySelectorAll('.svc-tab').forEach(b => b.removeAttribute('data-active'));
-  btn.setAttribute('data-active', 'true');
-  document.querySelectorAll('.svc-panel').forEach(p => p.classList.toggle('hidden', p.dataset.idx !== btn.dataset.idx));
-});
+(function () {
+  const menuEl = document.getElementById('svc-menu');
+  const tabs = Array.from(document.querySelectorAll('.svc-tab'));
+  const panels = Array.from(document.querySelectorAll('.svc-panel'));
+  const pin = document.getElementById('svc-pin');
+  const N = tabs.length;
+  let current = 0;
+
+  function activate(i) {
+    if (i === current) return;
+    current = i;
+    tabs.forEach((b, j) => b.toggleAttribute('data-active', j === i));
+    panels.forEach((p, j) => p.classList.toggle('hidden', j !== i));
+    const p = panels[i];
+    p.style.animation = 'none';
+    void p.offsetWidth;
+    p.style.animation = '';
+  }
+
+  const pinActive = () =>
+    window.matchMedia('(min-width: 768px)').matches &&
+    !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  let ticking = false;
+  function onScroll() {
+    if (!pinActive() || ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      ticking = false;
+      const total = pin.offsetHeight - window.innerHeight;
+      const prog = Math.min(Math.max(-pin.getBoundingClientRect().top / total, 0), 0.999);
+      activate(Math.floor(prog * N));
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  menuEl.addEventListener('click', (e) => {
+    const btn = e.target.closest('.svc-tab');
+    if (!btn) return;
+    const i = Number(btn.dataset.idx);
+    if (pinActive()) {
+      const total = pin.offsetHeight - window.innerHeight;
+      const top = pin.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: top + ((i + 0.5) / N) * total, behavior: 'smooth' });
+    } else {
+      activate(i);
+    }
+  });
+})();
 </script>
-</section>
 
 <!-- Why Stimuli Section -->
 <section class="py-section-gap bg-surface-container-low overflow-hidden">
