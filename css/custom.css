@@ -1,0 +1,58 @@
+body {
+  background-color: #f4fbfa;
+  color: #161d1d;
+  -webkit-font-smoothing: antialiased;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.soft-shadow {
+  box-shadow: 0px 10px 30px rgba(74, 103, 65, 0.05);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  /* დამალვა, სანამ აიქონების ფონტი ჩაიტვირთება (თორემ ligature ტექსტად ჩანს) */
+  visibility: hidden;
+}
+
+html.icons-ready .material-symbols-outlined {
+  visibility: visible;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, summary:focus-visible {
+  outline: 3px solid #4a6741;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* FAQ accordion */
+.faq details summary { list-style: none; cursor: pointer; }
+.faq details summary::-webkit-details-marker { display: none; }
+.faq details summary .chev { transition: transform 0.25s ease-out; }
+.faq details[open] summary .chev { transform: rotate(180deg); }
