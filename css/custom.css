@@ -136,7 +136,8 @@ html.icons-ready .material-symbols-outlined {
 }
 
 /* FAQ პასუხის გამოჩენა */
-.faq details[open] > p {
+.faq details[open] > p,
+.faq details[open] > div {
   animation: rise-in 0.35s ease-out;
 }
 
